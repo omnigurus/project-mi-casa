@@ -81,6 +81,7 @@ class MiCasa extends Component {
       this.setState({modalIsOpen: true});
     }
 
+	// This is an API that returns random quotes for the day
     fetch('https://horizonshq.herokuapp.com/api/inspirationalquotes')
       .then(resp => resp.json())
       .then(resp => this.setState({quote: resp.message}));
@@ -149,6 +150,7 @@ class MiCasa extends Component {
 
   getBGStyle(category = 'HK') {
     return {
+      // This returns random image for the day.
       backgroundImage: `url(https://source.unsplash.com/2560x1600/daily?${category})`,
       backgroundSize: 'cover',
       height: '100vh'
