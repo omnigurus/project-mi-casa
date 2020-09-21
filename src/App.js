@@ -81,7 +81,7 @@ class MiCasa extends Component {
       this.setState({modalIsOpen: true});
     }
 
-	// This is an API that returns random quotes for the day
+	// This is an API that returns random quotes every time
     fetch('https://horizonshq.herokuapp.com/api/inspirationalquotes')
       .then(resp => resp.json())
       .then(resp => this.setState({quote: resp.message}));
