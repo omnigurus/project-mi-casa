@@ -1,14 +1,20 @@
 # Mi Casa Browser Extension
 
-1. TO Run this you need Node.js Installed install using
-		$ brew install node
+1. To Run this you need Node.js Installed install using
+	$ brew install node
 
 2. Inside the directory, Install application dependencies 
- 		$ npm install
+ 	$ npm install
 	
-3. Run the application, will open a web page, will look like this.
- 		$ npm start
+3. Run the application and check if it opens a webpage.
+ 	$ npm start
 
+4. Running yarn create directory called build
+	$yarn build
+
+5. Open chrome in (Developer mode) and go to chrome://extensions/
+
+6. Click on Load unpacked and select the build directory.
 
 Personalized homepage extension for browsers written in React.
 
